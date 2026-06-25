@@ -18,14 +18,14 @@ Before( async function() {
     divya.page = page;
 
 });
-// BeforeStep( async function() {
-//     console.log("Before every step");
+BeforeStep( async function() {
+    console.log("Before every step");
 
-// });
-// AfterStep( async function() {
-//     console.log("After every step");
+});
+AfterStep( async function() {
+    console.log("After every step");
 
-// });
+});
 
 After( async function() {
    await divya.page.close();
